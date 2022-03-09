@@ -1,0 +1,14 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(221, 215, 215);
+    text-align: center;
+}
+
+.box{
+    border: 2px solid black;
+    border-radius: 35px;
+}
+
+.ball {
+    
+}

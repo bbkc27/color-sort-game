@@ -1,0 +1,33 @@
+
+WHITEBOARDING
+
+Need:
+
+    User Facing:
+    - 5 rectangles 
+        (div, display: grid, columns: 3, rows: 2, justify-content: space evenly; border: solid black, border-radius: ~35px)
+    - 12 circles (
+        divs, display: block (CONSIDER PUTTING CIRCLES IN THEIR OWN DIV WITHIN THE RECTANGLES), 3 different background colors,)
+    - How to Play Modal
+    - Winning Screen Modal
+        function to change display of div 
+    - Reset (/reset level) button
+    - Header / navigation section at the top w/ title & menu
+    - Colors and font-families (consider accessibility)
+
+    Behind the Scenes:
+    - A nodelist (use class name in HTML, then use the DOM and querySelectorAll) to make it easier to access 
+    event.target.backgroundColor to use in conditional statements
+    - Double event listener or something similar for when divs w/ class colorButton is clicked the first time it's selected. the second time it's dropped if there's no ball already in the div w/ class of rectangleBox || the top child (?) has the same backgroundColor
+
+
+
+
+In progress:
+
+
+
+
+Completed:
+
+
