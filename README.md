@@ -1,2 +1,2 @@
-# color-sort-game
-Project 1
+# Color Sort Game
+
