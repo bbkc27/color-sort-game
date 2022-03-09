@@ -19,15 +19,17 @@ header{
     background-color: rgb(158, 240, 158);
 }
 
-.howToPlayButton{
+button{
     color: brown;
     background-color: white;
     border: none;
     margin-top: 20px;
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
 }
-.modal     {
+
+.modal {
     background-color: rgba(248, 248, 248, 0.4);
     position: fixed;
     top: 0;
@@ -41,14 +43,23 @@ header{
 
 #modalTextbox{
 	background-color: white;
-	height: 150px;
-	width: 550px;
+	height: 250px;
+	width: 500px;
 	border-radius: 2px;
 	margin: 100px auto;
 	padding: 2%;
 	line-height: 120%;
 	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 	font-family: "Georgia";
+}
+
+.modalHeader{
+    color: brown;
+}
+
+.modalText{
+    margin: 0 50px 30px 50px;
+    font-weight: bold;
 }
 
 .game {
