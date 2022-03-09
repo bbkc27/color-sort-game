@@ -9,26 +9,43 @@
 </head>
 <body>
     <header>
-        <h1>Color Sort</h1>
-        <h4 class="howToPlayModal">How to Play</h4>
+        <h1 id="gameTitle">Color Sort</h1>
+        <button class="howToPlayButton">How to Play</button>
+
+        <div class="modal">
+            <div id="modalTextbox">
+            <h1>Color Sort</h1>
+            <p>Color Sort is a challenging logic puzzle. Sort the colored balls into the tubes until all of the same-colored balls are in the same tube.</p>
+            <button class="closeModalButton">Close</button>
+            </div>
+        </div>
+
     </header>
     
     <div class="game">
-        <div class="box"> 
-            <div class="ball blue"> </div>
+        <div class="box" id="box1"> 
+            <div class="ball blue" draggable="true"> </div>
+            <div class="ball green" draggable="true"> </div>
+            <div class="ball green" draggable="true"> </div>
         </div>
-        <div class="box"> 
-            <div class="ball blue"> </div>
-            <div class="ball blue"> </div>
+        <div class="box" id="box2"> 
+            <div class="ball blue" draggable="true"> </div>
+            <div class="ball brown" draggable="true"> </div>
+            <div class="ball orange" draggable="true"> </div>
         </div>
-        <div class="box"> 
-
+        <div class="box" id="box3"> 
+            <div class="ball green" draggable="true"> </div>
+            <div class="ball orange" draggable="true"> </div>
+            <div class="ball brown" draggable="true"> </div>
         </div>
-        <div class="box">
-
+        <div class="box" id="box4">
+            <div class="ball orange" draggable="true"> </div>
+            <div class="ball blue" draggable="true"> </div>
+            <div class="ball brown" draggable="true"> </div>
         </div>
-        <div class="box">
-
+        <div class="box" id="box5">
+        </div>
+        <div class="box" id="box6">
         </div>
     </div>
     <script src="script.js"></script>
