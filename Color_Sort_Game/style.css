@@ -80,12 +80,13 @@ button{
 .box{
     border: 2px solid black;
     border-radius: 35px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    height: 150px;
 }
 
 .ball{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
     width: 25px;
     height: 25px;
     margin: auto;

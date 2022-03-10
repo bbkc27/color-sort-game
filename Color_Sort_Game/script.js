@@ -29,7 +29,7 @@ const allowDrop = (ev) => {
 }
 
 const drag = (ev) => {   
-    if(ev.target === ev.target.parentElement.firstElementChild){
+    if(ev.target === ev.target.parentElement.lastElementChild){
     ev.dataTransfer.setData("text", ev.target.id);
     } else {
         ev.preventDefault();
@@ -38,19 +38,23 @@ const drag = (ev) => {
 
 const drop = (ev) => {
     if (ev.target.children.length == 0){
-    ev.preventDefault(); 
+   
+        ev.preventDefault(); 
 
     let data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
  
     } else if (ev.target.children.length < 3 && (ev.target.firstElementChild.dataset.color === ev.target.lastElementChild.dataset.color)){
+    
         ev.preventDefault(); 
 
     let data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
 
-    console.log(ev.target.firstElementChild.dataset.color, ev.target.lastElementChild.dataset.color, boxes, ev.target.children[1].dataset.color)  
-    } 
+    console.log(ev.target.firstElementChild.dataset.color, ev.target.lastElementChild.dataset.color, boxes, ev.target.children[1].dataset.color, ev.target.children.length)  
+    } else if (ev.target.children.length > 3){
+        console.log(ev.target.children.length, "There are already 3 balls in this tube.")
+    }
 }
 
 //BUTTONS - EVENT LISTENERS
