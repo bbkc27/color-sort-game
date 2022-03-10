@@ -67,14 +67,13 @@ button{
 }
 
 .game {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr; 
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 250px;
-    height: 450px;
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    flex-wrap: wrap;
     margin: auto;
     grid-gap: 10px;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .box{
@@ -84,6 +83,7 @@ button{
     flex-direction: column-reverse;
     align-items: flex-end;
     height: 150px;
+    width: 100px;
 }
 
 .ball{
