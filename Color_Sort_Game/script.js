@@ -37,12 +37,17 @@ const drag = (ev) => {
 }
 
 const drop = (ev) => {
-    if (ev.target.children.length === 0){
+    if (ev.target.children.length >= 3 || ev.target.classList[0] === "ball"){
+        console.log("Cannot Drop Ball Here.")
+
+    } else if (ev.target.children.length === 0){
    
         ev.preventDefault(); 
 
     let data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
+
+    console.log(ev.target.classList)
  
     } else if (ev.target.children.length < 3){
     
@@ -51,10 +56,8 @@ const drop = (ev) => {
     let data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
 
-    console.log(ev.target.firstElementChild.dataset.color, ev.target.lastElementChild.dataset.color, boxes, ev.target.children[1].dataset.color, ev.target.children.length)  
-    } else if (ev.target.children.length >= 3){
-        console.log(ev.target.children.length, "There are already 3 balls in this tube.")
-    }
+    console.log(boxes)  
+    } 
 }
 
 //BUTTONS - EVENT LISTENERS

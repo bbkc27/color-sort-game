@@ -69,7 +69,7 @@ button{
 .game {
     display: flex;
     flex-direction: row;
-    width: 350px;
+    width: 340px;
     flex-wrap: wrap;
     margin: auto;
     grid-gap: 10px;
