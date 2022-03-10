@@ -10,7 +10,10 @@
 <body>
     <header>
         <h1 id="gameTitle">Color Sort</h1>
-        <button class="howToPlayButton">How to Play</button>
+
+        <div id="headerButtons">
+        <button class="howToPlayButton">How to Play</button><span>|</span> <button id="resetButton">Reset Game</button>
+        </div>
 
         <div class="modal">
             <div id="modalTextbox">
@@ -23,29 +26,29 @@
     </header>
     
     <div class="game">
-        <div class="box" id="box1" ondrop="drop(event)" ondrag="allowDrop(event)"> 
-            <div class="ball blue"  draggable="true" ondragstart="drag(event)"> </div>
-            <div class="ball green" draggable="true" ondragstart="drag(event)"> </div>
-            <div class="ball green" draggable="true" ondragstart="drag(event)"> </div>
+        <div class="box" id="box1" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+            <div id="blue1" class="ball blue"  draggable="true" ondragstart="drag(event)"> </div>
+            <div id="green1" class="ball green" draggable="true" ondragstart="drag(event)"> </div>
+            <div id="green2" class="ball green" draggable="true" ondragstart="drag(event)"> </div>
         </div>
-        <div class="box" id="box2" ondrop="drop(event)" ondrag="allowDrop(event)"> 
-            <div class="ball blue" draggable="true" ondragstart="drag(event)"> </div>
-            <div class="ball brown" draggable="true" ondragstart="drag(event)"> </div>
-            <div class="ball orange" draggable="true" ondragstart="drag(event)"> </div>
+        <div class="box" id="box2" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+            <div id="blue2" class="ball blue" draggable="true" ondragstart="drag(event)"> </div>
+            <div id="brown1" class="ball brown" draggable="true" ondragstart="drag(event)"> </div>
+            <div id="orange1" class="ball orange" draggable="true" ondragstart="drag(event)"> </div>
         </div>
-        <div class="box" id="box3" ondrop="drop(event)" ondrag="allowDrop(event)"> 
-            <div class="ball green" draggable="true" ondragstart="drag(event)"> </div>
-            <div class="ball orange" draggable="true" ondragstart="drag(event)"> </div>
-            <div class="ball brown" draggable="true" ondragstart="drag(event)"> </div>
+        <div class="box" id="box3" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+            <div id="green3" class="ball green" draggable="true" ondragstart="drag(event)"> </div>
+            <div id="orange2" class="ball orange" draggable="true" ondragstart="drag(event)"> </div>
+            <div id="brown2" class="ball brown" draggable="true" ondragstart="drag(event)"> </div>
         </div>
-        <div class="box" id="box4" ondrop="drop(event)" ondrag="allowDrop(event)">
-            <div class="ball orange" draggable="true" ondragstart="drag(event)"> </div>
-            <div class="ball blue" draggable="true" ondragstart="drag(event)"> </div>
-            <div class="ball brown" draggable="true" ondragstart="drag(event)"> </div>
+        <div class="box" id="box4" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div id="orange3" class="ball orange" draggable="true" ondragstart="drag(event)"> </div>
+            <div id="blue3" class="ball blue" draggable="true" ondragstart="drag(event)"> </div>
+            <div id="brown3" class="ball brown" draggable="true" ondragstart="drag(event)"> </div>
         </div>
-        <div class="box" id="box5" ondrop="drop(event)" ondrag="allowDrop(event)">
+        <div class="box" id="box5" ondrop="drop(event)" ondragover="allowDrop(event)">
         </div>
-        <div class="box" id="box6" ondrop="drop(event)" ondrag="allowDrop(event)">
+        <div class="box" id="box6" ondrop="drop(event)" ondragover="allowDrop(event)">
         </div>
     </div>
     <script src="script.js"></script>

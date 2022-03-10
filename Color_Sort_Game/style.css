@@ -29,6 +29,10 @@ button{
     cursor: pointer;
 }
 
+#headerButtons{
+    display: inline;
+}
+
 .modal {
     background-color: rgba(248, 248, 248, 0.4);
     position: fixed;
