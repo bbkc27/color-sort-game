@@ -24,12 +24,12 @@
         </div>
     </header>
     
-    <h3>Level: <span id="currentLevel">2</span></h3>
+    <h3>Level: <span id="currentLevel">3</span></h3>
 
     <div class="game">
         <div class="box" id="box1" ondrop="drop(event)" ondragover="allowDrop(event)"> 
-            <div id="blue1" class="ball blue"  draggable="true" ondragstart="drag(event)" data-color="blue"> </div>
-            <div id="green1" class="ball green" draggable="true" ondragstart="drag(event)" data-color="green"> </div>
+            <div id="green3" class="ball green" draggable="true" ondragstart="drag(event)" data-color="green"> </div>
+            <div id="orange1" class="ball orange" draggable="true" ondragstart="drag(event)" data-color="orange"> </div>
             <div id="green2" class="ball green" draggable="true" ondragstart="drag(event)" data-color="green"> </div>
             <div id="brown4" class="ball brown" draggable="true" ondragstart="drag(event)" data-color="brown"> </div>
         </div>
@@ -37,19 +37,19 @@
             <div id="blue2" class="ball blue" draggable="true" ondragstart="drag(event)" data-color="blue"> </div>
             <div id="brown1" class="ball brown" draggable="true" ondragstart="drag(event)" data-color="brown"> </div>
             <div id="green4" class="ball green" draggable="true" ondragstart="drag(event)" data-color="green"> </div>
-            <div id="orange1" class="ball orange" draggable="true" ondragstart="drag(event)" data-color="orange"> </div>
-        </div>
-        <div class="box" id="box3" ondrop="drop(event)" ondragover="allowDrop(event)"> 
-            <div id="green3" class="ball green" draggable="true" ondragstart="drag(event)" data-color="green"> </div>
-            <div id="orange2" class="ball orange" draggable="true" ondragstart="drag(event)" data-color="orange"> </div>
-            <div id="brown2" class="ball brown" draggable="true" ondragstart="drag(event)" data-color="brown"> </div>
             <div id="blue4" class="ball blue" draggable="true" ondragstart="drag(event)" data-color="blue"> </div>
         </div>
+        <div class="box" id="box3" ondrop="drop(event)" ondragover="allowDrop(event)"> 
+            <div id="blue1" class="ball blue"  draggable="true" ondragstart="drag(event)" data-color="blue"> </div>
+            <div id="green1" class="ball green" draggable="true" ondragstart="drag(event)" data-color="green"> </div>
+            <div id="orange2" class="ball orange" draggable="true" ondragstart="drag(event)" data-color="orange"> </div>
+            <div id="brown2" class="ball brown" draggable="true" ondragstart="drag(event)" data-color="brown"> </div>
+        </div>
         <div class="box" id="box4" ondrop="drop(event)" ondragover="allowDrop(event)">
-            <div id="orange3" class="ball orange" draggable="true" ondragstart="drag(event)" data-color="orange"> </div>
-            <div id="blue3" class="ball blue" draggable="true" ondragstart="drag(event)" data-color="blue"> </div>
             <div id="orange4" class="ball orange" draggable="true" ondragstart="drag(event)" data-color="orange"> </div>
             <div id="brown3" class="ball brown" draggable="true" ondragstart="drag(event)" data-color="brown"> </div>
+            <div id="orange3" class="ball orange" draggable="true" ondragstart="drag(event)" data-color="orange"> </div>
+            <div id="blue3" class="ball blue" draggable="true" ondragstart="drag(event)" data-color="blue"> </div>
         </div>
         <div class="box" id="box5" ondrop="drop(event)" ondragover="allowDrop(event)">
         </div>
@@ -59,8 +59,8 @@
 
     <section class="level-winner">
         <h1 class="title --xl-large">Winner!</h1>
-        <p>You Won! <a href="levelThree.html">Next Level</a></p>
+        <h3>Congratulations! You beat every level!</h3>
       </section>
-    <script src="levelTwo.js"></script>
+    <script src="levelThree.js"></script>
 </body>
 </html>
