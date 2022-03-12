@@ -22,9 +22,10 @@
             <button class="closeModalButton">Close</button>
             </div>
         </div>
-
     </header>
     
+    <h3>Level: <span id="currentLevel">1</span></h3>
+
     <div class="game">
         <div class="box" id="box1" ondrop="drop(event)" ondragover="allowDrop(event)"> 
             <div id="blue1" class="ball blue"  draggable="true" ondragstart="drag(event)" data-color="blue"> </div>
@@ -51,6 +52,11 @@
         <div class="box" id="box6" ondrop="drop(event)" ondragover="allowDrop(event)">
         </div>
     </div>
+
+    <section class="level-winner">
+        <h1 class="title --xl-large">Winner!</h1>
+        <p>You Won! <a href="#"></a></p>
+      </section>
     <script src="script.js"></script>
 </body>
 </html>

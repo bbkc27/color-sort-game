@@ -9,6 +9,14 @@ let resetButton = document.getElementById("resetButton");
 let boxes = document.querySelectorAll(".box");
 let ball = document.querySelectorAll(".ball");
 
+//WINNING CONDITIONS
+let wins = 0;
+
+//WINNING FUNCTION
+const completeLevelOne = () => {
+    document.body.classList.add('game-over')
+}
+
 //BUTTONS - FUNCTIONS
 const openHowToPlayModal = () => {
     modal.style.display = "block";
@@ -68,11 +76,23 @@ const drop = (ev) => {
 
         let data = ev.dataTransfer.getData("text");
         ev.target.appendChild(document.getElementById(data));
-    } 
+
+        for (let i=0; i<6; i++){
+            if(boxes[i].children.length === 3 && boxes[i].children[0].classList.value == boxes[i].children[1].classList.value && boxes[i].children[1].classList.value == boxes[i].children[2].classList.value){
+                wins += 1
+                if (wins == 10){
+                    console.log("You Won!")
+                    completeLevelOne();
+                }
+            }
+        }
+    }  
 }
+
 
 //BUTTONS - EVENT LISTENERS
 howToPlayButton.addEventListener("click", openHowToPlayModal);
 closeModalButton.addEventListener("click", closeHowToPlayModal);
 resetButton.addEventListener("click", resetGame);
 
+// console.log(boxes[0].children[2].classList)
