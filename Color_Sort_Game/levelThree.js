@@ -2,8 +2,10 @@
 let howToPlayButton = document.querySelector(".howToPlayButton");
 let modal = document.querySelector(".modal");
 let closeModalButton = document.querySelector(".closeModalButton");
+let closeScreenButton = document.querySelector(".closeScreenButton")
 let resetLevelButton = document.getElementById("resetLevelButton");
 let resetGameButton = document.getElementById("resetGameButton");
+let winnerScreen = document.querySelector(".levelWinner")
 
 //COLORS - GRABBING ELEMENTS
 let boxes = document.querySelectorAll(".box");
@@ -14,7 +16,11 @@ let wins = 0;
 
 //WINNING FUNCTION
 const completeLevelThree = () => {
-    document.body.classList.add('game-over')
+    winnerScreen.style.display = "block";
+}
+
+const closeScreen = () => {
+    winnerScreen.style.display = "none";
 }
 
 //BUTTONS - FUNCTIONS
@@ -103,4 +109,5 @@ const drop = (ev) => {
 howToPlayButton.addEventListener("click", openHowToPlayModal);
 closeModalButton.addEventListener("click", closeHowToPlayModal);
 resetLevelButton.addEventListener("click", resetLevel);
+closeScreenButton.addEventListener("click", closeScreen);
 

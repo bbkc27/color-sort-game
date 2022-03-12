@@ -5,6 +5,7 @@ let modal = document.querySelector(".modal");
 let closeModalButton = document.querySelector(".closeModalButton");
 let resetLevelButton = document.getElementById("resetLevelButton");
 let resetGameButton = document.getElementById("resetGameButton");
+let winnerScreen = document.querySelector(".levelWinner")
 
 //COLORS - GRABBING ELEMENTS
 let boxes = document.querySelectorAll(".box");
@@ -15,7 +16,7 @@ let wins = 0;
 
 //WINNING FUNCTION
 const completeLevelTwo = () => {
-    document.body.classList.add('game-over')
+    winnerScreen.style.display = "block";
 }
 
 //BUTTONS - FUNCTIONS

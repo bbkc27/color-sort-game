@@ -30,9 +30,6 @@ button, a{
     text-decoration: none;
 }
 
-a{
-    margin-top: 20px;
-}
 
 #headerButtons{
     display: inline;
@@ -117,20 +114,30 @@ a{
 }
 
 
-.level-winner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 25%;
-    background-color: white;
-    text-align: center;
-    z-index: 1;
-    opacity: 0;
-    pointer-events: none;
+.levelWinner {
+    background-color: rgba(248, 248, 248, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1; 
+    overflow: auto;  
+    display: none; 
   }
   
-  .game-over .level-winner {
-    opacity: 1;
-    pointer-events: all;
+  .levelWinnerTextbox {
+    background-color: white;
+	height: 250px;
+	width: 500px;
+	border-radius: 2px;
+	margin: 100px auto;
+	padding: 2%;
+	line-height: 120%;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+	font-family: "Georgia";
+  }
+
+  .levelWinnerText{
+      margin-bottom: 100px;
   }
