@@ -96,6 +96,11 @@ button, a{
     margin-bottom: 5px;
 }
 
+
+.ball:active{
+    cursor: grabbing;
+}
+
 .blue{
     background-color: blue;
 }
@@ -140,3 +145,5 @@ button, a{
   .levelWinnerText{
       margin-bottom: 100px;
   }
+
+  
