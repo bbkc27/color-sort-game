@@ -61,7 +61,14 @@ const drop = (ev) => {
     if (ev.target.children.length >= 3 || ev.target.classList[0] === "ball"){
         console.log("Cannot Drop Ball Here.")
 
-    } else if (ev.target.children.length === 0 || (ev.target.children.length == 1 && ev.target.firstElementChild.classList[1] === draggedBall.classList[1]) || ev.target.children.length > 1 && ev.target.lastElementChild.classList[1] === draggedBall.classList[1]){
+    } else if (ev.target.children.length === 0 || (ev.target.children.length == 1 && ev.target.firstElementChild.classList[1] === draggedBall.classList[1])){
+        ev.preventDefault(); 
+
+        let data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+
+        
+    } else if (ev.target.children.length > 1 && ev.target.lastElementChild.classList[1] === draggedBall.classList[1]) {
         ev.preventDefault(); 
 
         let data = ev.dataTransfer.getData("text");
@@ -76,7 +83,7 @@ const drop = (ev) => {
                 }
             }
         }
-    } 
+    }
 }
 
 //BUTTONS - EVENT LISTENERS
