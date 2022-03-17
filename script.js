@@ -35,10 +35,8 @@ const resetLevel = () => {
 //COLORS - FUNCTIONS
 
 const allowDrop = (ev) => {
-
     ev.preventDefault();
-
-    // console.log(ev.target.style)
+    ev.dataTransfer.effectAllowed ="move";
 }
 
 

@@ -1,8 +1,8 @@
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    background-color: #2e2c2c;
-    color: white;
+    background-color: rgb(254,244,216);
+    color: rgb(0, 0, 0);
 }
 
 header{
@@ -12,18 +12,17 @@ header{
 }
 
 #gameTitle{
-    color: rgb(16, 16, 139);
-    border: 4px solid rgb(233, 181, 86);
+    color: rgb(145, 0, 0);
+    border: 4px solid rgb(0, 250, 0);
     border-radius: 35px;
     padding: 25px;
     width: fit-content;
     margin: auto;
-    background-color: rgb(125, 240, 125);
 }
 
 button, a{
     color: brown;
-    background-color: #2e2c2c;
+    background-color: rgb(254,244,216);
     border: none;
     margin-top: 20px;
     font-size: 20px;
@@ -49,7 +48,7 @@ button, a{
 }
 
 #modalTextbox{
-	background-color: black;
+	background-color: rgb(254,244,216);
 	height: 250px;
 	width: 500px;
 	border-radius: 2px;
@@ -70,7 +69,7 @@ button, a{
 }
 
 .closeModalButton, .nextLevelButton{
-    background-color: black;
+    background-color: rgb(254,244,216);
 }
 
 .game {
@@ -84,7 +83,7 @@ button, a{
 }
 
 .box{
-    border: 2px solid white;
+    border: 2px solid rgb(75, 75, 75);
     border-radius: 35px;
     display: flex;
     flex-direction: column-reverse;
@@ -137,7 +136,7 @@ button, a{
   }
   
   .levelWinnerTextbox {
-    background-color: black;
+    background-color: rgb(254,244,216);
 	height: 250px;
 	width: 500px;
 	border-radius: 2px;
