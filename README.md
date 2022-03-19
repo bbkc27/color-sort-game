@@ -25,13 +25,18 @@ To start, the player can drag any of the top balls from their current tube to an
 While playing, players have the option, at any time, to reset the current level they're on *or* reset the whole game.
 ___________________________
 
-### Wireframes
+### Languages Used
+- HTML
+- CSS
+- JavaScript
+________________________________
+### Original Wireframes
 - [Starting Screen](https://media.git.generalassemb.ly/user/41193/files/59d08180-9b18-11ec-9951-542a66b84aad)
 - [Winning Screen](https://media.git.generalassemb.ly/user/41193/files/60f78f80-9b18-11ec-9244-10bba8fa6524)
 
 ________________________________
 
-### Major Hurdles
+### Major Hurdles 
 
 - Adding drag/drop feature for each ball
 - Allowing only the top ball in each tube draggable
@@ -40,3 +45,9 @@ ________________________________
 - Allowing balls to only drop in a non-empty tube if they were stacking on top of a ball that was the same color (this was the hardest hurdle!)
 - Creating a functional win condition 
 ______________________________________
+
+### Future Inclusions
+
+- Add more levels
+- As a player, be able to select a ball to move on a first click and then dropping it on a second click
+- As a player, be able to undo last move
